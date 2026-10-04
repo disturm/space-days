@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(yc --version)",
+      "Bash(export PATH=\"$HOME/yandex-cloud/bin:$PATH\")",
+      "Bash(yc sls:*)",
+      "Bash(find /workspaces/space-days -maxdepth 1 -type f -name *.sh -o -name *.yml -o -name *.yaml)",
+      "Bash(xargs ls:*)",
+      "Bash(grep -r authorize /workspaces/space-days/backend/src --include=*.py)",
+      "Bash(find /workspaces/space-days/frontend/src/pages/admin -name *.tsx -o -name *.ts -o -name *.jsx -o -name *.js)",
+      "Bash(find /workspaces/space-days/frontend/src/pages/admin -name *layout* -o -name *index*)",
+      "Bash(find /workspaces/space-days/frontend/src -name App.* -o -name index.tsx -o -name index.jsx)",
+      "Bash(npm start:*)",
+      "Bash(pip install:*)",
+      "Bash(python3 main.py)",
+      "Bash(gh codespace:*)",
+      "Bash(grep -r \"day === 8\\\\|day == 8\\\\|день.*8\\\\|8.*апреля\" /workspaces/space-days --include=*.tsx --include=*.ts --include=*.jsx --include=*.js --include=*.css -n)",
+      "Bash(lsof -ti:3000)",
+      "Bash(xargs -r kill)",
+      "Bash(ls /workspaces/space-days/frontend/src/shared/image/partners/*.png)",
+      "Bash(npx tsc:*)",
+      "Bash(grep -E \"\\\\.\\(tsx?|jsx?\\)$\")",
+      "Bash(grep -A 20 \"DECLARE $eventData\\\\|DECLARE $slotData\" /workspaces/space-days/backend/src/app/adapters/repository.py)",
+      "Bash(grep -E \"\\\\.\\(sh|yml|yaml\\)$\")",
+      "Bash(npm run:*)"
+    ]
+  }
+}
